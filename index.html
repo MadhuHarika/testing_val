@@ -19,7 +19,7 @@
         <tbody>
         <tr>
             <td><label for="fname">First Name</label></td>
-            <td><input type="text"  class="form-control"  name="FirstName"  /></td>
+            <td><input type="text"  class="form-control"  name="FirstName" onblur="valfname()" /></td>
         </tr>
         <tr>
             <td><label for="lname">Last Name</label></td>
@@ -47,7 +47,8 @@
         </tr>
         <tr>
             <td></td>
-            <td><button type="button" class="btn  btn-success" onclick="valfname(); vallname(); valUname();">Submit</button> <button type="submit" class="btn btn-primary" >clear</button></td>
+            <td><input type="submit" value="submit" onsubmit="valfname()"/></td>
+                <!--<input type="submit" class="btn  btn-success" onclick="valfname(); vallname(); valUname();">Submit</input> <button type="submit" class="btn btn-primary" >clear</button></td>-->
         </tr>
         </tbody>
     </table>
